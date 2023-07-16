@@ -1,0 +1,19 @@
+import pytest, os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), "..")))
+from malwareDetector.detector import detector
+
+def test_detector_extractFeature():
+    with pytest.raises(NotImplementedError):
+        detector().predict()
+
+def test_detector_vectorize():
+    with pytest.raises(NotImplementedError):
+        detector().predict()
+
+def test_detector_model():
+    with pytest.raises(NotImplementedError):
+        detector().predict()
+
+def test_detector_predict():
+    with pytest.raises(NotImplementedError):
+        detector().predict()

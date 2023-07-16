@@ -1,0 +1,26 @@
+from setuptools import find_packages, setup
+
+with open("README.md", "r",encoding="utf-8") as f:
+    long_description = f.read()
+
+required_packages = [
+    'numpy',
+    'pydantic',
+]
+
+setup(
+    name='malwareDetector',
+    packages=find_packages(include=['malwareDetector']),
+    version='0.1.0',
+    description='Malware detector specification for NTUST isLab',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    author='PO-LIN LAI',
+    author_email='bolin8017@gmail.com',
+    license='MIT',
+    install_requires=required_packages,
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest'],
+    test_suite='tests',
+    python_requires='>=3.10',
+)
